@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test1.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key ="OracleRed">#f80000</Color>
+            <Color x:Key ="OracleDarkSlate">#324b5c</Color>
+
+            <Style TargetType="Label" x:Key="TitleStyle">
+                <Setter Property="TextColor" Value="{StaticResource OracleDarkSlate}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Label" x:Key="HeadingStyle">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Frame" x:Key="FrameHeadingStyle">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource OracleDarkSlate}"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="OutlineColor" Value="Transparent"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

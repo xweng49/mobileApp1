@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test1"
+             x:Class="Test1.MainPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="White">
+            <Frame Padding = "10" VerticalOptions="Start" BackgroundColor="{StaticResource OracleRed}">
+                <StackLayout>
+                    <Label TextColor="White" VerticalOptions="Start" FontSize="16" HorizontalTextAlignment="Center" Text="Welcome to"/>
+                    <Label TextColor="White" VerticalOptions="Start" FontSize="24" HorizontalTextAlignment="Center" Text="Testing Ground"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame VerticalOptions="CenterAndExpand" Padding="20,0,20,0">
+                <StackLayout Orientation="Vertical">
+                    <Label Style="{StaticResource TitleStyle}" VerticalOptions="Start" Text="Login Information"/>
+                    <StackLayout Orientation="Vertical" Padding="50,0,50,0">
+                        <Entry x:Name="login_id" Placeholder="Login ID" AutomationId="login"/>
+                        <Entry x:Name="login_password" IsPassword="True" Placeholder="Password" AutomationId="password"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame VerticalOptions="End">
+                <StackLayout >
+                    <Button Opacity="1" x:Name="submit_login" Text="Login" Clicked="LoginButton"/>
+                    <Button Opacity="1" x:Name="register_button" Text="Register" Clicked="RegisterButton"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
